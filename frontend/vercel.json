@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://<YOUR-RENDER-APP-NAME>.onrender.com/api/:match*"
+    },
+    {
+      "source": "/ws",
+      "destination": "https://<YOUR-RENDER-APP-NAME>.onrender.com/ws"
+    }
+  ]
+}
