@@ -3,7 +3,7 @@ import json
 import os
 from typing import List, Dict, Any, Optional
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "hunger_games.db")
+DB_PATH = os.environ.get("AIHG_DB_PATH", os.path.join(os.path.dirname(__file__), "hunger_games.db"))
 
 def get_db_connection():
     conn = sqlite3.connect(DB_PATH)
